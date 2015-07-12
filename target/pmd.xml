@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.1" timestamp="2015-07-12T21:25:54.549">
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/InputParser.java">
+<violation beginline="35" endline="35" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.HashMap'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/User.java">
+<violation beginline="75" endline="75" begincolumn="43" endcolumn="48" rule="UnusedFormalParameter" ruleset="Unused Code" package="org.pircbotx" class="User" method="User" variable="unused" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'unused'.
+</violation>
+<violation beginline="102" endline="102" begincolumn="33" endcolumn="71" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Basic" package="org.pircbotx" class="User" method="isVerified" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/basic.html#AvoidBranchingStatementAsLastInLoop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/UserChannelDao.java">
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="46" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'com.google.common.collect.ImmutableMap'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ChannelInfoEvent.java">
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ConnectAttemptFailedEvent.java">
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ConnectEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/DisconnectEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java">
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="21" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.Map'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MotdEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/QuitEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ServerPingEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'lombok.NonNull'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ServerResponseEvent.java">
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelLimitEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SocketConnectEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TopicEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UnknownEvent.java">
+<violation beginline="21" endline="21" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nonnull'
+</violation>
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="21" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'lombok.Getter'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserListEvent.java">
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+<file name="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/WhoisEvent.java">
+<violation beginline="22" endline="22" begincolumn="1" endcolumn="33" rule="UnusedImports" ruleset="Import Statements" package="org.pircbotx.hooks.events" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.1/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'javax.annotation.Nullable'
+</violation>
+</file>
+</pmd>

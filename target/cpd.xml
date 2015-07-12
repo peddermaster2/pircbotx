@@ -1,0 +1,2959 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="109" tokens="1605">
+      <file line="1775"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <file line="2400"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <codefragment><![CDATA[			final Builder other = (Builder)o;
+			if (!other.canEqual((java.lang.Object)this)) return false;
+			if (this.isWebIrcEnabled() != other.isWebIrcEnabled()) return false;
+			final java.lang.Object this$webIrcUsername = this.getWebIrcUsername();
+			final java.lang.Object other$webIrcUsername = other.getWebIrcUsername();
+			if (this$webIrcUsername == null ? other$webIrcUsername != null : !this$webIrcUsername.equals(other$webIrcUsername)) return false;
+			final java.lang.Object this$webIrcHostname = this.getWebIrcHostname();
+			final java.lang.Object other$webIrcHostname = other.getWebIrcHostname();
+			if (this$webIrcHostname == null ? other$webIrcHostname != null : !this$webIrcHostname.equals(other$webIrcHostname)) return false;
+			final java.lang.Object this$webIrcAddress = this.getWebIrcAddress();
+			final java.lang.Object other$webIrcAddress = other.getWebIrcAddress();
+			if (this$webIrcAddress == null ? other$webIrcAddress != null : !this$webIrcAddress.equals(other$webIrcAddress)) return false;
+			final java.lang.Object this$webIrcPassword = this.getWebIrcPassword();
+			final java.lang.Object other$webIrcPassword = other.getWebIrcPassword();
+			if (this$webIrcPassword == null ? other$webIrcPassword != null : !this$webIrcPassword.equals(other$webIrcPassword)) return false;
+			final java.lang.Object this$name = this.getName();
+			final java.lang.Object other$name = other.getName();
+			if (this$name == null ? other$name != null : !this$name.equals(other$name)) return false;
+			final java.lang.Object this$login = this.getLogin();
+			final java.lang.Object other$login = other.getLogin();
+			if (this$login == null ? other$login != null : !this$login.equals(other$login)) return false;
+			final java.lang.Object this$version = this.getVersion();
+			final java.lang.Object other$version = other.getVersion();
+			if (this$version == null ? other$version != null : !this$version.equals(other$version)) return false;
+			final java.lang.Object this$finger = this.getFinger();
+			final java.lang.Object other$finger = other.getFinger();
+			if (this$finger == null ? other$finger != null : !this$finger.equals(other$finger)) return false;
+			final java.lang.Object this$realName = this.getRealName();
+			final java.lang.Object other$realName = other.getRealName();
+			if (this$realName == null ? other$realName != null : !this$realName.equals(other$realName)) return false;
+			final java.lang.Object this$channelPrefixes = this.getChannelPrefixes();
+			final java.lang.Object other$channelPrefixes = other.getChannelPrefixes();
+			if (this$channelPrefixes == null ? other$channelPrefixes != null : !this$channelPrefixes.equals(other$channelPrefixes)) return false;
+			final java.lang.Object this$userLevelPrefixes = this.getUserLevelPrefixes();
+			final java.lang.Object other$userLevelPrefixes = other.getUserLevelPrefixes();
+			if (this$userLevelPrefixes == null ? other$userLevelPrefixes != null : !this$userLevelPrefixes.equals(other$userLevelPrefixes)) return false;
+			if (this.isSnapshotsEnabled() != other.isSnapshotsEnabled()) return false;
+			if (this.isDccFilenameQuotes() != other.isDccFilenameQuotes()) return false;
+			final java.lang.Object this$dccPorts = this.getDccPorts();
+			final java.lang.Object other$dccPorts = other.getDccPorts();
+			if (this$dccPorts == null ? other$dccPorts != null : !this$dccPorts.equals(other$dccPorts)) return false;
+			final java.lang.Object this$dccLocalAddress = this.getDccLocalAddress();
+			final java.lang.Object other$dccLocalAddress = other.getDccLocalAddress();
+			if (this$dccLocalAddress == null ? other$dccLocalAddress != null : !this$dccLocalAddress.equals(other$dccLocalAddress)) return false;
+			if (this.getDccAcceptTimeout() != other.getDccAcceptTimeout()) return false;
+			if (this.getDccResumeAcceptTimeout() != other.getDccResumeAcceptTimeout()) return false;
+			if (this.getDccTransferBufferSize() != other.getDccTransferBufferSize()) return false;
+			if (this.isDccPassiveRequest() != other.isDccPassiveRequest()) return false;
+			final java.lang.Object this$servers = this.getServers();
+			final java.lang.Object other$servers = other.getServers();
+			if (this$servers == null ? other$servers != null : !this$servers.equals(other$servers)) return false;
+			final java.lang.Object this$serverPassword = this.getServerPassword();
+			final java.lang.Object other$serverPassword = other.getServerPassword();
+			if (this$serverPassword == null ? other$serverPassword != null : !this$serverPassword.equals(other$serverPassword)) return false;
+			final java.lang.Object this$socketFactory = this.getSocketFactory();
+			final java.lang.Object other$socketFactory = other.getSocketFactory();
+			if (this$socketFactory == null ? other$socketFactory != null : !this$socketFactory.equals(other$socketFactory)) return false;
+			final java.lang.Object this$localAddress = this.getLocalAddress();
+			final java.lang.Object other$localAddress = other.getLocalAddress();
+			if (this$localAddress == null ? other$localAddress != null : !this$localAddress.equals(other$localAddress)) return false;
+			final java.lang.Object this$encoding = this.getEncoding();
+			final java.lang.Object other$encoding = other.getEncoding();
+			if (this$encoding == null ? other$encoding != null : !this$encoding.equals(other$encoding)) return false;
+			final java.lang.Object this$locale = this.getLocale();
+			final java.lang.Object other$locale = other.getLocale();
+			if (this$locale == null ? other$locale != null : !this$locale.equals(other$locale)) return false;
+			if (this.getSocketTimeout() != other.getSocketTimeout()) return false;
+			if (this.getMaxLineLength() != other.getMaxLineLength()) return false;
+			if (this.isAutoSplitMessage() != other.isAutoSplitMessage()) return false;
+			if (this.isAutoNickChange() != other.isAutoNickChange()) return false;
+			if (this.getMessageDelay() != other.getMessageDelay()) return false;
+			if (this.isShutdownHookEnabled() != other.isShutdownHookEnabled()) return false;
+			final java.lang.Object this$autoJoinChannels = this.getAutoJoinChannels();
+			final java.lang.Object other$autoJoinChannels = other.getAutoJoinChannels();
+			if (this$autoJoinChannels == null ? other$autoJoinChannels != null : !this$autoJoinChannels.equals(other$autoJoinChannels)) return false;
+			if (this.isIdentServerEnabled() != other.isIdentServerEnabled()) return false;
+			final java.lang.Object this$nickservPassword = this.getNickservPassword();
+			final java.lang.Object other$nickservPassword = other.getNickservPassword();
+			if (this$nickservPassword == null ? other$nickservPassword != null : !this$nickservPassword.equals(other$nickservPassword)) return false;
+			final java.lang.Object this$nickservOnSuccess = this.getNickservOnSuccess();
+			final java.lang.Object other$nickservOnSuccess = other.getNickservOnSuccess();
+			if (this$nickservOnSuccess == null ? other$nickservOnSuccess != null : !this$nickservOnSuccess.equals(other$nickservOnSuccess)) return false;
+			final java.lang.Object this$nickservNick = this.getNickservNick();
+			final java.lang.Object other$nickservNick = other.getNickservNick();
+			if (this$nickservNick == null ? other$nickservNick != null : !this$nickservNick.equals(other$nickservNick)) return false;
+			if (this.isNickservDelayJoin() != other.isNickservDelayJoin()) return false;
+			if (this.isAutoReconnect() != other.isAutoReconnect()) return false;
+			if (this.getAutoReconnectDelay() != other.getAutoReconnectDelay()) return false;
+			if (this.getAutoReconnectAttempts() != other.getAutoReconnectAttempts()) return false;
+			final java.lang.Object this$listenerManager = this.getListenerManager();
+			final java.lang.Object other$listenerManager = other.getListenerManager();
+			if (this$listenerManager == null ? other$listenerManager != null : !this$listenerManager.equals(other$listenerManager)) return false;
+			if (this.isCapEnabled() != other.isCapEnabled()) return false;
+			final java.lang.Object this$capHandlers = this.getCapHandlers();
+			final java.lang.Object other$capHandlers = other.getCapHandlers();
+			if (this$capHandlers == null ? other$capHandlers != null : !this$capHandlers.equals(other$capHandlers)) return false;
+			final java.lang.Object this$channelModeHandlers = this.getChannelModeHandlers();
+			final java.lang.Object other$channelModeHandlers = other.getChannelModeHandlers();
+			if (this$channelModeHandlers == null ? other$channelModeHandlers != null : !this$channelModeHandlers.equals(other$channelModeHandlers)) return false;
+			final java.lang.Object this$botFactory = this.getBotFactory();
+			final java.lang.Object other$botFactory = other.getBotFactory();
+			if (this$botFactory == null ? other$botFactory != null : !this$botFactory.equals(other$botFactory)) return false;
+			return true;
+		}
+
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		protected boolean canEqual(final java.lang.Object other) {
+			return other instanceof Configuration.Builder;]]></codefragment>
+   </duplication>
+   <duplication lines="90" tokens="1233">
+      <file line="1884"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <file line="2509"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <codefragment><![CDATA[		}
+
+		@java.lang.Override
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public int hashCode() {
+			final int PRIME = 59;
+			int result = 1;
+			result = result * PRIME + (this.isWebIrcEnabled() ? 79 : 97);
+			final java.lang.Object $webIrcUsername = this.getWebIrcUsername();
+			result = result * PRIME + ($webIrcUsername == null ? 0 : $webIrcUsername.hashCode());
+			final java.lang.Object $webIrcHostname = this.getWebIrcHostname();
+			result = result * PRIME + ($webIrcHostname == null ? 0 : $webIrcHostname.hashCode());
+			final java.lang.Object $webIrcAddress = this.getWebIrcAddress();
+			result = result * PRIME + ($webIrcAddress == null ? 0 : $webIrcAddress.hashCode());
+			final java.lang.Object $webIrcPassword = this.getWebIrcPassword();
+			result = result * PRIME + ($webIrcPassword == null ? 0 : $webIrcPassword.hashCode());
+			final java.lang.Object $name = this.getName();
+			result = result * PRIME + ($name == null ? 0 : $name.hashCode());
+			final java.lang.Object $login = this.getLogin();
+			result = result * PRIME + ($login == null ? 0 : $login.hashCode());
+			final java.lang.Object $version = this.getVersion();
+			result = result * PRIME + ($version == null ? 0 : $version.hashCode());
+			final java.lang.Object $finger = this.getFinger();
+			result = result * PRIME + ($finger == null ? 0 : $finger.hashCode());
+			final java.lang.Object $realName = this.getRealName();
+			result = result * PRIME + ($realName == null ? 0 : $realName.hashCode());
+			final java.lang.Object $channelPrefixes = this.getChannelPrefixes();
+			result = result * PRIME + ($channelPrefixes == null ? 0 : $channelPrefixes.hashCode());
+			final java.lang.Object $userLevelPrefixes = this.getUserLevelPrefixes();
+			result = result * PRIME + ($userLevelPrefixes == null ? 0 : $userLevelPrefixes.hashCode());
+			result = result * PRIME + (this.isSnapshotsEnabled() ? 79 : 97);
+			result = result * PRIME + (this.isDccFilenameQuotes() ? 79 : 97);
+			final java.lang.Object $dccPorts = this.getDccPorts();
+			result = result * PRIME + ($dccPorts == null ? 0 : $dccPorts.hashCode());
+			final java.lang.Object $dccLocalAddress = this.getDccLocalAddress();
+			result = result * PRIME + ($dccLocalAddress == null ? 0 : $dccLocalAddress.hashCode());
+			result = result * PRIME + this.getDccAcceptTimeout();
+			result = result * PRIME + this.getDccResumeAcceptTimeout();
+			result = result * PRIME + this.getDccTransferBufferSize();
+			result = result * PRIME + (this.isDccPassiveRequest() ? 79 : 97);
+			final java.lang.Object $servers = this.getServers();
+			result = result * PRIME + ($servers == null ? 0 : $servers.hashCode());
+			final java.lang.Object $serverPassword = this.getServerPassword();
+			result = result * PRIME + ($serverPassword == null ? 0 : $serverPassword.hashCode());
+			final java.lang.Object $socketFactory = this.getSocketFactory();
+			result = result * PRIME + ($socketFactory == null ? 0 : $socketFactory.hashCode());
+			final java.lang.Object $localAddress = this.getLocalAddress();
+			result = result * PRIME + ($localAddress == null ? 0 : $localAddress.hashCode());
+			final java.lang.Object $encoding = this.getEncoding();
+			result = result * PRIME + ($encoding == null ? 0 : $encoding.hashCode());
+			final java.lang.Object $locale = this.getLocale();
+			result = result * PRIME + ($locale == null ? 0 : $locale.hashCode());
+			result = result * PRIME + this.getSocketTimeout();
+			result = result * PRIME + this.getMaxLineLength();
+			result = result * PRIME + (this.isAutoSplitMessage() ? 79 : 97);
+			result = result * PRIME + (this.isAutoNickChange() ? 79 : 97);
+			final long $messageDelay = this.getMessageDelay();
+			result = result * PRIME + (int)($messageDelay >>> 32 ^ $messageDelay);
+			result = result * PRIME + (this.isShutdownHookEnabled() ? 79 : 97);
+			final java.lang.Object $autoJoinChannels = this.getAutoJoinChannels();
+			result = result * PRIME + ($autoJoinChannels == null ? 0 : $autoJoinChannels.hashCode());
+			result = result * PRIME + (this.isIdentServerEnabled() ? 79 : 97);
+			final java.lang.Object $nickservPassword = this.getNickservPassword();
+			result = result * PRIME + ($nickservPassword == null ? 0 : $nickservPassword.hashCode());
+			final java.lang.Object $nickservOnSuccess = this.getNickservOnSuccess();
+			result = result * PRIME + ($nickservOnSuccess == null ? 0 : $nickservOnSuccess.hashCode());
+			final java.lang.Object $nickservNick = this.getNickservNick();
+			result = result * PRIME + ($nickservNick == null ? 0 : $nickservNick.hashCode());
+			result = result * PRIME + (this.isNickservDelayJoin() ? 79 : 97);
+			result = result * PRIME + (this.isAutoReconnect() ? 79 : 97);
+			result = result * PRIME + this.getAutoReconnectDelay();
+			result = result * PRIME + this.getAutoReconnectAttempts();
+			final java.lang.Object $listenerManager = this.getListenerManager();
+			result = result * PRIME + ($listenerManager == null ? 0 : $listenerManager.hashCode());
+			result = result * PRIME + (this.isCapEnabled() ? 79 : 97);
+			final java.lang.Object $capHandlers = this.getCapHandlers();
+			result = result * PRIME + ($capHandlers == null ? 0 : $capHandlers.hashCode());
+			final java.lang.Object $channelModeHandlers = this.getChannelModeHandlers();
+			result = result * PRIME + ($channelModeHandlers == null ? 0 : $channelModeHandlers.hashCode());
+			final java.lang.Object $botFactory = this.getBotFactory();
+			result = result * PRIME + ($botFactory == null ? 0 : $botFactory.hashCode());
+			return result;
+		}
+
+		@java.lang.Override
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public java.lang.String toString() {
+			return "Configuration.Builder(webIrcEnabled=" + this.isWebIrcEnabled() + ", webIrcUsername=" + this.getWebIrcUsername() + ", webIrcHostname=" + this.getWebIrcHostname() + ", webIrcAddress=" + this.getWebIrcAddress() + ", webIrcPassword=" + this.getWebIrcPassword() + ", name=" + this.getName() + ", login=" + this.getLogin() + ", version=" + this.getVersion() + ", finger=" + this.getFinger() + ", realName=" + this.getRealName() + ", channelPrefixes=" + this.getChannelPrefixes() + ", userLevelPrefixes=" + this.getUserLevelPrefixes() + ", snapshotsEnabled=" + this.isSnapshotsEnabled() + ", dccFilenameQuotes=" + this.isDccFilenameQuotes() + ", dccPorts=" + this.getDccPorts() + ", dccLocalAddress=" + this.getDccLocalAddress() + ", dccAcceptTimeout=" + this.getDccAcceptTimeout() + ", dccResumeAcceptTimeout=" + this.getDccResumeAcceptTimeout() + ", dccTransferBufferSize=" + this.getDccTransferBufferSize() + ", dccPassiveRequest=" + this.isDccPassiveRequest() + ", servers=" + this.getServers() + ", serverPassword=" + this.getServerPassword() + ", socketFactory=" + this.getSocketFactory() + ", localAddress=" + this.getLocalAddress() + ", encoding=" + this.getEncoding() + ", locale=" + this.getLocale() + ", socketTimeout=" + this.getSocketTimeout() + ", maxLineLength=" + this.getMaxLineLength() + ", autoSplitMessage=" + this.isAutoSplitMessage() + ", autoNickChange=" + this.isAutoNickChange() + ", messageDelay=" + this.getMessageDelay() + ", shutdownHookEnabled=" + this.isShutdownHookEnabled() + ", autoJoinChannels=" + this.getAutoJoinChannels() + ", identServerEnabled=" + this.isIdentServerEnabled() + ", nickservPassword=" + this.getNickservPassword() + ", nickservOnSuccess=" + this.getNickservOnSuccess() + ", nickservNick=" + this.getNickservNick() + ", nickservDelayJoin=" + this.isNickservDelayJoin() + ", autoReconnect=" + this.isAutoReconnect() + ", autoReconnectDelay=" + this.getAutoReconnectDelay() + ", autoReconnectAttempts=" + this.getAutoReconnectAttempts() + ", listenerManager=" + this.getListenerManager() + ", capEnabled=" + this.isCapEnabled() + ", capHandlers=" + this.getCapHandlers() + ", channelModeHandlers=" + this.getChannelModeHandlers() + ", botFactory=" + this.getBotFactory() + ")";]]></codefragment>
+   </duplication>
+   <duplication lines="151" tokens="426">
+      <file line="862"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <file line="2122"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <codefragment><![CDATA[		}
+
+		/**
+		 * Enable or disable sending WEBIRC line on connect, default disabled
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isWebIrcEnabled() {
+			return this.webIrcEnabled;
+		}
+
+		/**
+		 * Username of WEBIRC connection, must not be blank if WEBIRC is enabled
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getWebIrcUsername() {
+			return this.webIrcUsername;
+		}
+
+		/**
+		 * Hostname of WEBIRC connection, must not be blank if WEBIRC is enabled
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getWebIrcHostname() {
+			return this.webIrcHostname;
+		}
+
+		/**
+		 * IP address of WEBIRC connection, must be set if WEBIRC is enabled
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public InetAddress getWebIrcAddress() {
+			return this.webIrcAddress;
+		}
+
+		/**
+		 * Password of WEBIRC connection, must not be blank if WEBIRC is enabled
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getWebIrcPassword() {
+			return this.webIrcPassword;
+		}
+
+		/**
+		 * The nick to be used for the IRC connection (nick!login@host), must
+		 * not be blank
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getName() {
+			return this.name;
+		}
+
+		/**
+		 * The login to be used for the IRC connection (nick!login@host),
+		 * default PircBotX
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getLogin() {
+			return this.login;
+		}
+
+		/**
+		 * CTCP version response.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getVersion() {
+			return this.version;
+		}
+
+		/**
+		 * CTCP finger response
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getFinger() {
+			return this.finger;
+		}
+
+		/**
+		 * The realName/fullname used for WHOIS info, defaults to version
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getRealName() {
+			return this.realName;
+		}
+
+		/**
+		 * Allowed channel prefix characters, default <code>#&+!</code>
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getChannelPrefixes() {
+			return this.channelPrefixes;
+		}
+
+		/**
+		 * Supported channel prefixes that restrict a sent message to users with
+		 * this mode, eg <code>PRIVMSG +#channel :hello</code> will only send a
+		 * message to voiced or higher users, default <code>+@%&~!</code>
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getUserLevelPrefixes() {
+			return this.userLevelPrefixes;
+		}
+
+		/**
+		 * Enable creation of snapshots, default true. In bulk datasets or very
+		 * lower power devices, creating snapshots can be a relatively expensive
+		 * operation for every
+		 * {@link org.pircbotx.hooks.types.GenericSnapshotEvent} (eg PartEvent,
+		 * QuitEvent) since the entire UserChannelDao with all of its users and
+		 * channels is cloned. This can optionally disabled by setting this to
+		 * false, however this makes all
+		 * {@link org.pircbotx.hooks.types.GenericSnapshotEvent#getUserChannelDaoSnapshot()}
+		 * calls return null.
+		 * <p>
+		 * In regular usage disabling snapshots is not necessary because there
+		 * relatively few user QUITs and PARTs per second.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isSnapshotsEnabled() {
+			return this.snapshotsEnabled;
+		}
+
+		/**
+		 * If true sends filenames in quotes, otherwise uses underscores,
+		 * default enabled.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isDccFilenameQuotes() {
+			return this.dccFilenameQuotes;
+		}
+
+		/**
+		 * Ports to allow DCC incoming connections, recommended to set multiple
+		 * as DCC connections will be rejected if no free port can be found
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public List<Integer> getDccPorts() {]]></codefragment>
+   </duplication>
+   <duplication lines="119" tokens="350">
+      <file line="1040"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <file line="2246"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <codefragment><![CDATA[		public List<ServerEntry> getServers() {
+			return this.servers;
+		}
+
+		/**
+		 * Password for IRC server, default null
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getServerPassword() {
+			return this.serverPassword;
+		}
+
+		/**
+		 * Socket factory for connections, defaults to {@link SocketFactory#getDefault()
+		 * }
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public SocketFactory getSocketFactory() {
+			return this.socketFactory;
+		}
+
+		/**
+		 * Address to bind to when connecting to IRC server, default null
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public InetAddress getLocalAddress() {
+			return this.localAddress;
+		}
+
+		/**
+		 * Charset encoding to use for connection, defaults to
+		 * {@link Charset#defaultCharset()}
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public Charset getEncoding() {
+			return this.encoding;
+		}
+
+		/**
+		 * Locale to use for connection, defaults to {@link Locale#getDefault()
+		 * }
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public Locale getLocale() {
+			return this.locale;
+		}
+
+		/**
+		 * Milliseconds to wait with no data from the IRC server before sending
+		 * a PING request to check if the socket is still alive, default 5
+		 * minutes (1000x60x5=300,000 milliseconds)
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public int getSocketTimeout() {
+			return this.socketTimeout;
+		}
+
+		/**
+		 * Maximum line length of IRC server, defaults 512 characters
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public int getMaxLineLength() {
+			return this.maxLineLength;
+		}
+
+		/**
+		 * Enable or disable automatic message splitting to fit
+		 * {@link #getMaxLineLength()} to prevent the IRC server from possibly
+		 * truncating or rejecting the line, default true.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isAutoSplitMessage() {
+			return this.autoSplitMessage;
+		}
+
+		/**
+		 * Enable or disable automatic nick changing if a nick is in use by
+		 * adding a number to the end, default false which will throw a
+		 * {@link IrcException} if the nick is already in use on the server
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isAutoNickChange() {
+			return this.autoNickChange;
+		}
+
+		/**
+		 * Millisecond delay between sending messages, default 1000 milliseconds
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public long getMessageDelay() {
+			return this.messageDelay;
+		}
+
+		/**
+		 * Enable or disable creating a JVM shutdown hook which will properly
+		 * QUIT the IRC server and shutdown the bot, default true
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isShutdownHookEnabled() {
+			return this.shutdownHookEnabled;
+		}
+
+		/**
+		 * Map of channels and keys to automatically join upon connecting.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public Map<String, String> getAutoJoinChannels() {]]></codefragment>
+   </duplication>
+   <duplication lines="115" tokens="294">
+      <file line="1158"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <file line="2318"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <codefragment><![CDATA[		public Map<String, String> getAutoJoinChannels() {
+			return this.autoJoinChannels;
+		}
+
+		/**
+		 * Enable or disable use of an existing {@link IdentServer}, default
+		 * false. Note that the IdentServer must be started separately or else
+		 * an exception will be thrown
+		 *
+		 * @see IdentServer
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isIdentServerEnabled() {
+			return this.identServerEnabled;
+		}
+
+		/**
+		 * Password to authenticate against NICKSERV, default null (will not try
+		 * to identify)
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getNickservPassword() {
+			return this.nickservPassword;
+		}
+
+		/**
+		 * Case-insensitive message a user with 
+		 * {@link #setNickservNick(java.lang.String) } in its hostmask will
+		 * always contain when we have successfully identified, defaults to "you
+		 * are now" which which matches all of the following known server
+		 * responses:
+		 * <ul>
+		 * <li>ircd-seven (freenode) - You are now identified for PircBotX</li>
+		 * <li>Unreal (swiftirc) - Password accepted - you are now
+		 * recognized.</li>
+		 * <li>InspIRCd (mozilla) - You are now logged in as PircBotX</li>
+		 * </ul>
+		 *
+		 * @see PircBotX#isNickservIdentified()
+		 * @see #setNickservNick(java.lang.String)
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getNickservOnSuccess() {
+			return this.nickservOnSuccess;
+		}
+
+		/**
+		 * The nick of the nickserv service account, default "nickserv".
+		 *
+		 * @see PircBotX#isNickservIdentified()
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public String getNickservNick() {
+			return this.nickservNick;
+		}
+
+		/**
+		 * Delay joining channels until were identified to nickserv, default
+		 * false
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isNickservDelayJoin() {
+			return this.nickservDelayJoin;
+		}
+
+		/**
+		 * Enable or disable automatic reconnecting, default false. Note that
+		 * you MUST call {@link PircBotX#stopBotReconnect() } when you do not
+		 * want the bot to reconnect anymore!
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isAutoReconnect() {
+			return this.autoReconnect;
+		}
+
+		/**
+		 * Delay in milliseconds between reconnect attempts, default 0.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public int getAutoReconnectDelay() {
+			return this.autoReconnectDelay;
+		}
+
+		/**
+		 * Number of times to attempt to reconnect, default 5.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public int getAutoReconnectAttempts() {
+			return this.autoReconnectAttempts;
+		}
+
+		/**
+		 * Enable or disable CAP handling, defaults true.
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean isCapEnabled() {
+			return this.capEnabled;
+		}
+
+		/**
+		 * IRCv3 CAP features to try to use, default enables multi-prefix and
+		 * away-notify but ignoring if the server doesn't support them
+		 */
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public List<CapHandler> getCapHandlers() {]]></codefragment>
+   </duplication>
+   <duplication lines="41" tokens="276">
+      <file line="117"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="119"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $key = this.getKey();
+		result = result * PRIME + ($key == null ? 0 : $key.hashCode());
+		return result;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="19" tokens="267">
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="136"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		final HalfOpEvent other = (HalfOpEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$recipientHostmask = this.getRecipientHostmask();
+		final java.lang.Object other$recipientHostmask = other.getRecipientHostmask();
+		if (this$recipientHostmask == null ? other$recipientHostmask != null : !this$recipientHostmask.equals(other$recipientHostmask)) return false;
+		final java.lang.Object this$recipient = this.getRecipient();
+		final java.lang.Object other$recipient = other.getRecipient();
+		if (this$recipient == null ? other$recipient != null : !this$recipient.equals(other$recipient)) return false;
+		if (this.isHalfOp() != other.isHalfOp()) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="18" tokens="263">
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="136"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		final HalfOpEvent other = (HalfOpEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$recipientHostmask = this.getRecipientHostmask();
+		final java.lang.Object other$recipientHostmask = other.getRecipientHostmask();
+		if (this$recipientHostmask == null ? other$recipientHostmask != null : !this$recipientHostmask.equals(other$recipientHostmask)) return false;
+		final java.lang.Object this$recipient = this.getRecipient();
+		final java.lang.Object other$recipient = other.getRecipient();
+		if (this$recipient == null ? other$recipient != null : !this$recipient.equals(other$recipient)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="22" tokens="254">
+      <file line="95"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="97"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <codefragment><![CDATA[		final RemoveChannelKeyEvent other = (RemoveChannelKeyEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$key = this.getKey();
+		final java.lang.Object other$key = other.getKey();
+		if (this$key == null ? other$key != null : !this$key.equals(other$key)) return false;
+		return true;
+	}
+
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	protected boolean canEqual(final java.lang.Object other) {
+		return other instanceof RemoveChannelKeyEvent;]]></codefragment>
+   </duplication>
+   <duplication lines="49" tokens="246">
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="39" tokens="244">
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="104"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		return result;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="50" tokens="242">
+      <file line="177"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingChatRequestEvent.java"/>
+      <file line="240"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingFileTransferEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + this.getPort();
+		final java.lang.Object $token = this.getToken();
+		result = result * PRIME + ($token == null ? 0 : $token.hashCode());
+		result = result * PRIME + (this.isPassive() ? 79 : 97);
+		return result;
+	}
+
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public InetAddress getAddress() {
+		return this.address;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int getPort() {
+		return this.port;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public String getToken() {
+		return this.token;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public boolean isPassive() {
+		return this.passive;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="16" tokens="223">
+      <file line="163"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="156"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <codefragment><![CDATA[		final ActionEvent other = (ActionEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$channelSource = this.getChannelSource();
+		final java.lang.Object other$channelSource = other.getChannelSource();
+		if (this$channelSource == null ? other$channelSource != null : !this$channelSource.equals(other$channelSource)) return false;
+		final java.lang.Object this$action = this.getAction();]]></codefragment>
+   </duplication>
+   <duplication lines="20" tokens="220">
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="162"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $recipientHostmask = this.getRecipientHostmask();
+		result = result * PRIME + ($recipientHostmask == null ? 0 : $recipientHostmask.hashCode());
+		final java.lang.Object $recipient = this.getRecipient();
+		result = result * PRIME + ($recipient == null ? 0 : $recipient.hashCode());
+		result = result * PRIME + (this.isHalfOp() ? 79 : 97);]]></codefragment>
+   </duplication>
+   <duplication lines="34" tokens="215">
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="104"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		return result;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")]]></codefragment>
+   </duplication>
+   <duplication lines="19" tokens="211">
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="162"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $recipientHostmask = this.getRecipientHostmask();
+		result = result * PRIME + ($recipientHostmask == null ? 0 : $recipientHostmask.hashCode());
+		final java.lang.Object $recipient = this.getRecipient();
+		result = result * PRIME + ($recipient == null ? 0 : $recipient.hashCode());]]></codefragment>
+   </duplication>
+   <duplication lines="19" tokens="208">
+      <file line="101"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="89"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <codefragment><![CDATA[		final FingerEvent other = (FingerEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		return true;
+	}
+
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	protected boolean canEqual(final java.lang.Object other) {
+		return other instanceof FingerEvent;]]></codefragment>
+   </duplication>
+   <duplication lines="19" tokens="208">
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="93"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="93"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[		final RemoveChannelLimitEvent other = (RemoveChannelLimitEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		return true;
+	}
+
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	protected boolean canEqual(final java.lang.Object other) {
+		return other instanceof RemoveChannelLimitEvent;]]></codefragment>
+   </duplication>
+   <duplication lines="14" tokens="194">
+      <file line="128"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="122"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <codefragment><![CDATA[		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$recipientHostmask = this.getRecipientHostmask();
+		final java.lang.Object other$recipientHostmask = other.getRecipientHostmask();
+		if (this$recipientHostmask == null ? other$recipientHostmask != null : !this$recipientHostmask.equals(other$recipientHostmask)) return false;
+		final java.lang.Object this$recipient = this.getRecipient();
+		final java.lang.Object other$recipient = other.getRecipient();
+		if (this$recipient == null ? other$recipient != null : !this$recipient.equals(other$recipient)) return false;
+		final java.lang.Object this$reason = this.getReason();]]></codefragment>
+   </duplication>
+   <duplication lines="13" tokens="188">
+      <file line="130"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="128"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="141"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="130"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="122"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <file line="128"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$recipientHostmask = this.getRecipientHostmask();
+		final java.lang.Object other$recipientHostmask = other.getRecipientHostmask();
+		if (this$recipientHostmask == null ? other$recipientHostmask != null : !this$recipientHostmask.equals(other$recipientHostmask)) return false;
+		final java.lang.Object this$recipient = this.getRecipient();
+		final java.lang.Object other$recipient = other.getRecipient();
+		if (this$recipient == null ? other$recipient != null : !this$recipient.equals(other$recipient)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="18" tokens="185">
+      <file line="188"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $channelSource = this.getChannelSource();
+		result = result * PRIME + ($channelSource == null ? 0 : $channelSource.hashCode());
+		final java.lang.Object $action = this.getAction();]]></codefragment>
+   </duplication>
+   <duplication lines="33" tokens="184">
+      <file line="120"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="108"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		return result;
+	}
+
+	/**
+	 * The user hostmask that sent the FINGER request.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that sent the FINGER request.
+	 */
+	@Override
+	@Nullable]]></codefragment>
+   </duplication>
+   <duplication lines="17" tokens="179">
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java"/>
+      <file line="117"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/QuitEvent.java"/>
+      <codefragment><![CDATA[		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$reason = this.getReason();
+		final java.lang.Object other$reason = other.getReason();
+		if (this$reason == null ? other$reason != null : !this$reason.equals(other$reason)) return false;
+		return true;
+	}
+
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	protected boolean canEqual(final java.lang.Object other) {
+		return other instanceof PartEvent;]]></codefragment>
+   </duplication>
+   <duplication lines="13" tokens="177">
+      <file line="163"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="156"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <codefragment><![CDATA[		final ActionEvent other = (ActionEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$channelSource = this.getChannelSource();]]></codefragment>
+   </duplication>
+   <duplication lines="13" tokens="177">
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="122"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="136"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="111"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="95"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="107"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="97"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		final HalfOpEvent other = (HalfOpEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$recipientHostmask = this.getRecipientHostmask();]]></codefragment>
+   </duplication>
+   <duplication lines="39" tokens="173">
+      <file line="48"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="50"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <codefragment><![CDATA[	public RemoveChannelKeyEvent(PircBotX bot, @NonNull Channel channel, @NonNull UserHostmask userHostmask, User user, String key) {
+		super(bot);
+		if (channel == null) {
+			throw new java.lang.NullPointerException("channel");
+		}
+		if (userHostmask == null) {
+			throw new java.lang.NullPointerException("userHostmask");
+		}
+		this.channel = channel;
+		this.userHostmask = userHostmask;
+		this.user = user;
+		this.key = key;
+	}
+
+	/**
+	 * Respond by send a message in the channel to the user that removed the
+	 * mode in <code>user: message</code> format
+	 *
+	 * @param response The response to send
+	 */
+	@Override
+	public void respond(String response) {
+		getChannel().send().message(getUser(), response);
+	}
+
+	/**
+	 * The key that was in use before the channel key was removed.
+	 */
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public String getKey() {
+		return this.key;
+	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public java.lang.String toString() {
+		return "RemoveChannelKeyEvent(channel=" + this.getChannel() + ", userHostmask=" + this.getUserHostmask() + ", user=" + this.getUser() + ", key=" + this.getKey() + ")";]]></codefragment>
+   </duplication>
+   <duplication lines="12" tokens="171">
+      <file line="163"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="101"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="156"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <file line="89"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <codefragment><![CDATA[		final ActionEvent other = (ActionEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="12" tokens="171">
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="122"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="136"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="111"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="95"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="107"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="97"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="96"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelLimitEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="80"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="81"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="93"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="93"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		final HalfOpEvent other = (HalfOpEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="56" tokens="170">
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + (this.isHalfOp() ? 79 : 97);
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The user hostmask that received the half-op
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {
+		return this.recipientHostmask;
+	}
+
+	/**
+	 * The user that received the half-op
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getRecipient() {
+		return this.recipient;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="56" tokens="168">
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + (this.isHalfOp() ? 79 : 97);
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The user hostmask that received the half-op
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {
+		return this.recipientHostmask;
+	}
+
+	/**
+	 * The user that received the half-op
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getRecipient() {
+		return this.recipient;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="1" tokens="167">
+      <file line="1973"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <file line="2598"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/Configuration.java"/>
+      <codefragment><![CDATA[			return "Configuration.Builder(webIrcEnabled=" + this.isWebIrcEnabled() + ", webIrcUsername=" + this.getWebIrcUsername() + ", webIrcHostname=" + this.getWebIrcHostname() + ", webIrcAddress=" + this.getWebIrcAddress() + ", webIrcPassword=" + this.getWebIrcPassword() + ", name=" + this.getName() + ", login=" + this.getLogin() + ", version=" + this.getVersion() + ", finger=" + this.getFinger() + ", realName=" + this.getRealName() + ", channelPrefixes=" + this.getChannelPrefixes() + ", userLevelPrefixes=" + this.getUserLevelPrefixes() + ", snapshotsEnabled=" + this.isSnapshotsEnabled() + ", dccFilenameQuotes=" + this.isDccFilenameQuotes() + ", dccPorts=" + this.getDccPorts() + ", dccLocalAddress=" + this.getDccLocalAddress() + ", dccAcceptTimeout=" + this.getDccAcceptTimeout() + ", dccResumeAcceptTimeout=" + this.getDccResumeAcceptTimeout() + ", dccTransferBufferSize=" + this.getDccTransferBufferSize() + ", dccPassiveRequest=" + this.isDccPassiveRequest() + ", servers=" + this.getServers() + ", serverPassword=" + this.getServerPassword() + ", socketFactory=" + this.getSocketFactory() + ", localAddress=" + this.getLocalAddress() + ", encoding=" + this.getEncoding() + ", locale=" + this.getLocale() + ", socketTimeout=" + this.getSocketTimeout() + ", maxLineLength=" + this.getMaxLineLength() + ", autoSplitMessage=" + this.isAutoSplitMessage() + ", autoNickChange=" + this.isAutoNickChange() + ", messageDelay=" + this.getMessageDelay() + ", shutdownHookEnabled=" + this.isShutdownHookEnabled() + ", autoJoinChannels=" + this.getAutoJoinChannels() + ", identServerEnabled=" + this.isIdentServerEnabled() + ", nickservPassword=" + this.getNickservPassword() + ", nickservOnSuccess=" + this.getNickservOnSuccess() + ", nickservNick=" + this.getNickservNick() + ", nickservDelayJoin=" + this.isNickservDelayJoin() + ", autoReconnect=" + this.isAutoReconnect() + ", autoReconnectDelay=" + this.getAutoReconnectDelay() + ", autoReconnectAttempts=" + this.getAutoReconnectAttempts() + ", listenerManager=" + this.getListenerManager() + ", capEnabled=" + this.isCapEnabled() + ", capHandlers=" + this.getCapHandlers() + ", channelModeHandlers=" + this.getChannelModeHandlers() + ", botFactory=" + this.getBotFactory() + ")";]]></codefragment>
+   </duplication>
+   <duplication lines="56" tokens="164">
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="171"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + (this.isHalfOp() ? 79 : 97);
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The user hostmask that received the half-op
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {
+		return this.recipientHostmask;
+	}
+
+	/**
+	 * The user that received the half-op
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getRecipient() {
+		return this.recipient;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="24" tokens="156">
+      <file line="152"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java"/>
+      <file line="144"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/QuitEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $reason = this.getReason();
+		result = result * PRIME + ($reason == null ? 0 : $reason.hashCode());
+		return result;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserChannelDaoSnapshot getUserChannelDaoSnapshot() {
+		return this.userChannelDaoSnapshot;
+	}
+
+	/**
+	 * Snapshot of the channel as of before the user parted.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public ChannelSnapshot getChannel() {]]></codefragment>
+   </duplication>
+   <duplication lines="16" tokens="153">
+      <file line="188"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="134"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $channelSource = this.getChannelSource();]]></codefragment>
+   </duplication>
+   <duplication lines="16" tokens="153">
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="147"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="162"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="133"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="117"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="129"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="119"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $recipientHostmask = this.getRecipientHostmask();]]></codefragment>
+   </duplication>
+   <duplication lines="11" tokens="148">
+      <file line="127"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="124"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="138"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="120"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="97"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="109"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="127"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		if (!super.equals(o)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$recipientHostmask = this.getRecipientHostmask();]]></codefragment>
+   </duplication>
+   <duplication lines="15" tokens="147">
+      <file line="188"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="120"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="134"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <file line="108"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());]]></codefragment>
+   </duplication>
+   <duplication lines="15" tokens="147">
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="147"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="162"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="133"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="117"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="129"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="119"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="116"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelLimitEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="104"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="99"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="151"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="142">
+      <file line="188"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/UserHostmask.java"/>
+      <file line="249"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/WhoisEvent.java"/>
+      <codefragment><![CDATA[		if (this$bot == null ? other$bot != null : !this$bot.equals(other$bot)) return false;
+		final java.lang.Object this$nick = this.getNick();
+		final java.lang.Object other$nick = other.getNick();
+		if (this$nick == null ? other$nick != null : !this$nick.equals(other$nick)) return false;
+		final java.lang.Object this$login = this.getLogin();
+		final java.lang.Object other$login = other.getLogin();
+		if (this$login == null ? other$login != null : !this$login.equals(other$login)) return false;
+		final java.lang.Object this$hostname = this.getHostname();
+		final java.lang.Object other$hostname = other.getHostname();
+		if (this$hostname == null ? other$hostname != null : !this$hostname.equals(other$hostname)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="142">
+      <file line="164"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <file line="94"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PrivateMessageEvent.java"/>
+      <codefragment><![CDATA[		if (this$channelSource == null ? other$channelSource != null : !this$channelSource.equals(other$channelSource)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$message = this.getMessage();
+		final java.lang.Object other$message = other.getMessage();
+		if (this$message == null ? other$message != null : !this$message.equals(other$message)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="142">
+      <file line="120"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="83"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="98"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelLimitEvent.java"/>
+      <file line="83"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="87"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="83"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="82"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="83"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="95"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="95"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[		if (this$userChannelDaoSnapshot == null ? other$userChannelDaoSnapshot != null : !this$userChannelDaoSnapshot.equals(other$userChannelDaoSnapshot)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="50" tokens="139">
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + (this.isHalfOp() ? 79 : 97);
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The user hostmask that received the half-op
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {
+		return this.recipientHostmask;
+	}
+
+	/**
+	 * The user that received the half-op
+	 */
+	@Override
+	@Nullable]]></codefragment>
+   </duplication>
+   <duplication lines="50" tokens="137">
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + (this.isSuperOp() ? 79 : 97);
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The nick of the user that got 'voiced'.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {
+		return this.recipientHostmask;
+	}
+
+	/**
+	 * The nick of the user that got 'voiced'.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")]]></codefragment>
+   </duplication>
+   <duplication lines="29" tokens="136">
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="44"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="44"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="45"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="44"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="43"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="44"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="56"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <codefragment><![CDATA[	public RemoveChannelLimitEvent(PircBotX bot, @NonNull Channel channel, @NonNull UserHostmask userHostmask, User user) {
+		super(bot);
+		if (channel == null) {
+			throw new java.lang.NullPointerException("channel");
+		}
+		if (userHostmask == null) {
+			throw new java.lang.NullPointerException("userHostmask");
+		}
+		this.channel = channel;
+		this.userHostmask = userHostmask;
+		this.user = user;
+	}
+
+	/**
+	 * Respond by send a message in the channel to the user that removed the
+	 * mode in <code>user: message</code> format
+	 *
+	 * @param response The response to send
+	 */
+	@Override
+	public void respond(String response) {
+		getChannel().send().message(getUser(), response);
+	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public java.lang.String toString() {
+		return "RemoveChannelLimitEvent(channel=" + this.getChannel() + ", userHostmask=" + this.getUserHostmask() + ", user=" + this.getUser() + ")";]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="135">
+      <file line="161"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="153"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $recipientHostmask = this.getRecipientHostmask();
+		result = result * PRIME + ($recipientHostmask == null ? 0 : $recipientHostmask.hashCode());
+		final java.lang.Object $recipient = this.getRecipient();
+		result = result * PRIME + ($recipient == null ? 0 : $recipient.hashCode());
+		final java.lang.Object $reason = this.getReason();]]></codefragment>
+   </duplication>
+   <duplication lines="50" tokens="133">
+      <file line="171"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($reason == null ? 0 : $reason.hashCode());
+		return result;
+	}
+
+	/**
+	 * The channel from which the recipient was kicked.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the kick.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user who performed the kick.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The unfortunate recipient hostmask of the kick.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {
+		return this.recipientHostmask;
+	}
+
+	/**
+	 * The unfortunate recipient of the kick.
+	 */
+	@Override
+	@Nullable]]></codefragment>
+   </duplication>
+   <duplication lines="14" tokens="133">
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NickChangeEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="86"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="86"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="90"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="86"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="85"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="86"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <file line="98"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="98"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[		if (this$newNick == null ? other$newNick != null : !this$newNick.equals(other$newNick)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		return true;
+	}
+
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	protected boolean canEqual(final java.lang.Object other) {
+		return other instanceof NickChangeEvent;]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="131">
+      <file line="163"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="101"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="156"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <file line="92"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PrivateMessageEvent.java"/>
+      <file line="120"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <file line="89"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <codefragment><![CDATA[		final ActionEvent other = (ActionEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();]]></codefragment>
+   </duplication>
+   <duplication lines="10" tokens="131">
+      <file line="138"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingChatRequestEvent.java"/>
+      <file line="188"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingFileTransferEvent.java"/>
+      <file line="98"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/InviteEvent.java"/>
+      <codefragment><![CDATA[		final IncomingChatRequestEvent other = (IncomingChatRequestEvent)o;
+		if (!other.canEqual((java.lang.Object)this)) return false;
+		if (!super.equals(o)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$address = this.getAddress();]]></codefragment>
+   </duplication>
+   <duplication lines="9" tokens="129">
+      <file line="161"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="159"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="172"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="161"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="153"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <file line="159"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $recipientHostmask = this.getRecipientHostmask();
+		result = result * PRIME + ($recipientHostmask == null ? 0 : $recipientHostmask.hashCode());
+		final java.lang.Object $recipient = this.getRecipient();
+		result = result * PRIME + ($recipient == null ? 0 : $recipient.hashCode());]]></codefragment>
+   </duplication>
+   <duplication lines="42" tokens="124">
+      <file line="171"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="204"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($reason == null ? 0 : $reason.hashCode());
+		return result;
+	}
+
+	/**
+	 * The channel from which the recipient was kicked.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the kick.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user who performed the kick.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The unfortunate recipient hostmask of the kick.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {]]></codefragment>
+   </duplication>
+   <duplication lines="14" tokens="121">
+      <file line="188"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="120"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="134"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <file line="111"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PrivateMessageEvent.java"/>
+      <file line="145"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <file line="108"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $channel = this.getChannel();]]></codefragment>
+   </duplication>
+   <duplication lines="14" tokens="121">
+      <file line="162"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingChatRequestEvent.java"/>
+      <file line="219"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingFileTransferEvent.java"/>
+      <file line="117"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/InviteEvent.java"/>
+      <codefragment><![CDATA[	}
+
+	@java.lang.Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public int hashCode() {
+		final int PRIME = 59;
+		int result = 1;
+		result = result * PRIME + super.hashCode();
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $address = this.getAddress();]]></codefragment>
+   </duplication>
+   <duplication lines="20" tokens="120">
+      <file line="732"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <file line="841"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <codefragment><![CDATA[		}
+
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public void setReceiverAddress(final InetAddress receiverAddress) {
+			this.receiverAddress = receiverAddress;
+		}
+
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public void setReceiverPort(final int receiverPort) {
+			this.receiverPort = receiverPort;
+		}
+
+		@java.lang.Override
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean equals(final java.lang.Object o) {
+			if (o == this) return true;
+			if (!(o instanceof DccHandler.PendingSendFileTransferPassive)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="42" tokens="120">
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="204"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="181"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="168"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + (this.isHalfOp() ? 79 : 97);
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The user hostmask that received the half-op
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getRecipientHostmask() {]]></codefragment>
+   </duplication>
+   <duplication lines="20" tokens="116">
+      <file line="525"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <file line="612"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <codefragment><![CDATA[		}
+
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public long getPosition() {
+			return this.position;
+		}
+
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public void setPosition(final long position) {
+			this.position = position;
+		}
+
+		@java.lang.Override
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public boolean equals(final java.lang.Object o) {
+			if (o == this) return true;
+			if (!(o instanceof DccHandler.PendingRecieveFileTransfer)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="8" tokens="113">
+      <file line="632"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <file line="752"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <codefragment><![CDATA[			final PendingSendFileTransfer other = (PendingSendFileTransfer)o;
+			if (!other.canEqual((java.lang.Object)this)) return false;
+			final java.lang.Object this$user = this.getUser();
+			final java.lang.Object other$user = other.getUser();
+			if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+			final java.lang.Object this$filename = this.getFilename();
+			final java.lang.Object other$filename = other.getFilename();
+			if (this$filename == null ? other$filename != null : !this$filename.equals(other$filename)) return false;]]></codefragment>
+   </duplication>
+   <duplication lines="39" tokens="111">
+      <file line="108"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="101"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <codefragment><![CDATA[		if (getChannel() == null) getUserHostmask().send().action(response); else getBot().sendIRC().action(channelSource, response);
+	}
+
+	/**
+	 * Respond with a message to the channel without the prefix
+	 *
+	 * @param response The response to send
+	 */
+	public void respondChannel(String response) {
+		if (getChannel() == null) throw new RuntimeException("Event does not contain a channel");
+		getBot().sendIRC().message(channelSource, response);
+	}
+
+	/**
+	 * Respond with a PM directly to the user
+	 *
+	 * @param response The response to send
+	 */
+	@Override
+	public void respondPrivateMessage(String response) {
+		getUser().send().message(response);
+	}
+
+	/**
+	 * The raw channel name, could be a special mode message eg +#channel that
+	 * only goes to voiced users.
+	 */
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public String getChannelSource() {
+		return this.channelSource;
+	}
+
+	/**
+	 * The action message.
+	 */
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public String getAction() {]]></codefragment>
+   </duplication>
+   <duplication lines="12" tokens="105">
+      <file line="763"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <file line="868"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <codefragment><![CDATA[			if (this.getStartPosition() != other.getStartPosition()) return false;
+			final java.lang.Object this$receiverAddress = this.getReceiverAddress();
+			final java.lang.Object other$receiverAddress = other.getReceiverAddress();
+			if (this$receiverAddress == null ? other$receiverAddress != null : !this$receiverAddress.equals(other$receiverAddress)) return false;
+			if (this.getReceiverPort() != other.getReceiverPort()) return false;
+			return true;
+		}
+
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		protected boolean canEqual(final java.lang.Object other) {
+			return other instanceof DccHandler.PendingSendFileTransferPassive;]]></codefragment>
+   </duplication>
+   <duplication lines="12" tokens="104">
+      <file line="649"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <file line="775"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/dcc/DccHandler.java"/>
+      <codefragment><![CDATA[		}
+
+		@java.lang.Override
+		@java.lang.SuppressWarnings("all")
+		@javax.annotation.Generated("lombok")
+		public int hashCode() {
+			final int PRIME = 59;
+			int result = 1;
+			final java.lang.Object $user = this.getUser();
+			result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+			final java.lang.Object $filename = this.getFilename();
+			result = result * PRIME + ($filename == null ? 0 : $filename.hashCode());]]></codefragment>
+   </duplication>
+   <duplication lines="12" tokens="104">
+      <file line="150"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingChatRequestEvent.java"/>
+      <file line="207"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/IncomingFileTransferEvent.java"/>
+      <codefragment><![CDATA[		if (this.getPort() != other.getPort()) return false;
+		final java.lang.Object this$token = this.getToken();
+		final java.lang.Object other$token = other.getToken();
+		if (this$token == null ? other$token != null : !this$token.equals(other$token)) return false;
+		if (this.isPassive() != other.isPassive()) return false;
+		return true;
+	}
+
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	protected boolean canEqual(final java.lang.Object other) {
+		return other instanceof IncomingChatRequestEvent;]]></codefragment>
+   </duplication>
+   <duplication lines="36" tokens="104">
+      <file line="199"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="150"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($notice == null ? 0 : $notice.hashCode());
+		return result;
+	}
+
+	/**
+	 * The user hostmask that sent the hostmask.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that sent the notice.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+
+	/**
+	 * The target channel of the notice. A value of <code>null</code> means that
+	 * the target is us
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="35" tokens="104">
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="126"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="126"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($hostmask == null ? 0 : $hostmask.hashCode());
+		return result;
+	}
+
+	/**
+	 * The channel in which the mode change took place.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user that performed the mode change.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+}]]></codefragment>
+   </duplication>
+   <duplication lines="8" tokens="103">
+      <file line="159"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="159"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="155"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="157"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="170"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="150"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java"/>
+      <file line="141"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="125"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="137"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="127"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="159"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="157"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + super.hashCode();
+		final java.lang.Object $channel = this.getChannel();
+		result = result * PRIME + ($channel == null ? 0 : $channel.hashCode());
+		final java.lang.Object $userHostmask = this.getUserHostmask();
+		result = result * PRIME + ($userHostmask == null ? 0 : $userHostmask.hashCode());
+		final java.lang.Object $user = this.getUser();
+		result = result * PRIME + ($user == null ? 0 : $user.hashCode());
+		final java.lang.Object $recipientHostmask = this.getRecipientHostmask();]]></codefragment>
+   </duplication>
+   <duplication lines="34" tokens="103">
+      <file line="171"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="204"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <file line="149"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="126"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetTopicProtectionEvent.java"/>
+      <file line="126"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/TimeEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($reason == null ? 0 : $reason.hashCode());
+		return result;
+	}
+
+	/**
+	 * The channel from which the recipient was kicked.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	/**
+	 * The user hostmask that performed the kick.
+	 */
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	/**
+	 * The user who performed the kick.
+	 */
+	@Override
+	@Nullable
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}]]></codefragment>
+   </duplication>
+   <duplication lines="8" tokens="102">
+      <file line="165"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="103"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/FingerEvent.java"/>
+      <file line="130"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/HalfOpEvent.java"/>
+      <file line="128"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/KickEvent.java"/>
+      <file line="164"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <file line="127"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ModeEvent.java"/>
+      <file line="158"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <file line="128"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OpEvent.java"/>
+      <file line="141"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/OwnerEvent.java"/>
+      <file line="123"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PartEvent.java"/>
+      <file line="114"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PingEvent.java"/>
+      <file line="94"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/PrivateMessageEvent.java"/>
+      <file line="117"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/QuitEvent.java"/>
+      <file line="116"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelBanEvent.java"/>
+      <file line="100"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="112"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="102"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="130"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SuperOpEvent.java"/>
+      <file line="122"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/UserModeEvent.java"/>
+      <file line="91"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VersionEvent.java"/>
+      <file line="128"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/VoiceEvent.java"/>
+      <codefragment><![CDATA[		if (!super.equals(o)) return false;
+		final java.lang.Object this$userHostmask = this.getUserHostmask();
+		final java.lang.Object other$userHostmask = other.getUserHostmask();
+		if (this$userHostmask == null ? other$userHostmask != null : !this$userHostmask.equals(other$userHostmask)) return false;
+		final java.lang.Object this$user = this.getUser();
+		final java.lang.Object other$user = other.getUser();
+		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();]]></codefragment>
+   </duplication>
+   <duplication lines="8" tokens="102">
+      <file line="171"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/ActionEvent.java"/>
+      <file line="158"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/MessageEvent.java"/>
+      <file line="164"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/NoticeEvent.java"/>
+      <codefragment><![CDATA[		if (this$user == null ? other$user != null : !this$user.equals(other$user)) return false;
+		final java.lang.Object this$channel = this.getChannel();
+		final java.lang.Object other$channel = other.getChannel();
+		if (this$channel == null ? other$channel != null : !this$channel.equals(other$channel)) return false;
+		final java.lang.Object this$channelSource = this.getChannelSource();
+		final java.lang.Object other$channelSource = other.getChannelSource();
+		if (this$channelSource == null ? other$channelSource != null : !this$channelSource.equals(other$channelSource)) return false;
+		final java.lang.Object this$action = this.getAction();]]></codefragment>
+   </duplication>
+   <duplication lines="25" tokens="102">
+      <file line="133"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelKeyEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveChannelLimitEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveInviteOnlyEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveModeratedEvent.java"/>
+      <file line="114"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveNoExternalMessagesEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemovePrivateEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveSecretEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/RemoveTopicProtectionEvent.java"/>
+      <file line="145"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelBanEvent.java"/>
+      <file line="135"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetChannelKeyEvent.java"/>
+      <file line="114"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetInviteOnlyEvent.java"/>
+      <file line="118"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetModeratedEvent.java"/>
+      <file line="114"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetNoExternalMessagesEvent.java"/>
+      <file line="113"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetPrivateEvent.java"/>
+      <file line="114"
+            path="/home/travis/build/TheLQ/pircbotx/target/delombok/org/pircbotx/hooks/events/SetSecretEvent.java"/>
+      <codefragment><![CDATA[		result = result * PRIME + ($key == null ? 0 : $key.hashCode());
+		return result;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public Channel getChannel() {
+		return this.channel;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public UserHostmask getUserHostmask() {
+		return this.userHostmask;
+	}
+
+	@Override
+	@java.lang.SuppressWarnings("all")
+	@javax.annotation.Generated("lombok")
+	public User getUser() {
+		return this.user;
+	}
+}]]></codefragment>
+   </duplication>
+</pmd-cpd>
