@@ -93,7 +93,7 @@
 <th>Missing Classes</th></tr>
 <tr class="b">
 <td>174</td>
-<td>22</td>
+<td>23</td>
 <td>0</td>
 <td>0</td></tr></table></div>
 <div class="section">
@@ -142,24 +142,27 @@
 <td><a href="#org.pircbotx.exception.DccException">org.pircbotx.exception.DccException</a></td>
 <td>1</td></tr>
 <tr class="a">
-<td><a href="#org.pircbotx.output.OutputRaw">org.pircbotx.output.OutputRaw</a></td>
+<td><a href="#org.pircbotx.hooks.events.ActionEvent">org.pircbotx.hooks.events.ActionEvent</a></td>
 <td>1</td></tr>
 <tr class="b">
+<td><a href="#org.pircbotx.output.OutputRaw">org.pircbotx.output.OutputRaw</a></td>
+<td>1</td></tr>
+<tr class="a">
 <td><a href="#org.pircbotx.snapshot.ChannelSnapshot">org.pircbotx.snapshot.ChannelSnapshot</a></td>
 <td>2</td></tr>
-<tr class="a">
+<tr class="b">
 <td><a href="#org.pircbotx.snapshot.UserChannelDaoSnapshot">org.pircbotx.snapshot.UserChannelDaoSnapshot</a></td>
 <td>1</td></tr></table></div><a name="org.pircbotx.Colors"></a>
 <div class="section">
 <h3><a name="org.pircbotx.Colors"></a>org.pircbotx.Colors</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>Use of non-localized String.toUpperCase() or String.toLowerCase() in org.pircbotx.Colors.lookup(String)</td>
 <td>I18N</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_CONVERT_CASE">DM_CONVERT_CASE</a></td>
@@ -168,13 +171,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.Configuration"></a>org.pircbotx.Configuration</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>Confusing to have methods org.pircbotx.Configuration.getRealName() and org.pircbotx.hooks.events.WhoisEvent.getRealname()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NM_CONFUSING">NM_CONFUSING</a></td>
@@ -183,13 +186,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.IdentServer"></a>org.pircbotx.IdentServer</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>org.pircbotx.IdentServer.server should be package protected</td>
 <td>MALICIOUS_CODE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#MS_PKGPROTECT">MS_PKGPROTECT</a></td>
@@ -198,37 +201,37 @@
 <div class="section">
 <h3><a name="org.pircbotx.InputParser"></a>org.pircbotx.InputParser</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>Unchecked/unconfirmed cast from org.pircbotx.Channel to org.pircbotx.snapshot.ChannelSnapshot of return value in org.pircbotx.InputParser.processCommand(String, UserHostmask, String, String, List, ImmutableMap)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">BC_UNCONFIRMED_CAST_OF_RETURN_VALUE</a></td>
 <td>480</td>
 <td>Low</td></tr>
-<tr class="b">
+<tr class="a">
 <td>Unchecked/unconfirmed cast from org.pircbotx.User to org.pircbotx.snapshot.UserSnapshot of return value in org.pircbotx.InputParser.processCommand(String, UserHostmask, String, String, List, ImmutableMap)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">BC_UNCONFIRMED_CAST_OF_RETURN_VALUE</a></td>
 <td>481</td>
 <td>Low</td></tr>
-<tr class="a">
+<tr class="b">
 <td>Unchecked/unconfirmed cast from java.net.Socket to javax.net.ssl.SSLSocket of return value in org.pircbotx.InputParser.processConnect(String, String, String, List)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">BC_UNCONFIRMED_CAST_OF_RETURN_VALUE</a></td>
 <td>377</td>
 <td>Low</td></tr>
-<tr class="b">
+<tr class="a">
 <td>org.pircbotx.InputParser.handleLine(String) uses String.indexOf(String) instead of String.indexOf(int)</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#IIO_INEFFICIENT_INDEX_OF">IIO_INEFFICIENT_INDEX_OF</a></td>
 <td>281</td>
 <td>Low</td></tr>
-<tr class="a">
+<tr class="b">
 <td>org.pircbotx.InputParser.handleLine(String) uses String.indexOf(String) instead of String.indexOf(int)</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#IIO_INEFFICIENT_INDEX_OF">IIO_INEFFICIENT_INDEX_OF</a></td>
@@ -237,19 +240,19 @@
 <div class="section">
 <h3><a name="org.pircbotx.PircBotX"></a>org.pircbotx.PircBotX</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>Redundant nullcheck of org.pircbotx.PircBotX.socket, which is known to be non-null in org.pircbotx.PircBotX.connect()</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE</a></td>
 <td>265</td>
 <td>Medium</td></tr>
-<tr class="b">
+<tr class="a">
 <td>Repeated conditional test in org.pircbotx.PircBotX.connect()</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RpC_REPEATED_CONDITIONAL_TEST">RpC_REPEATED_CONDITIONAL_TEST</a></td>
@@ -258,13 +261,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.ReplayServer"></a>org.pircbotx.ReplayServer</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Found reliance on default encoding in org.pircbotx.ReplayServer.replay(Configuration$Builder, InputStream, String): new java.io.InputStreamReader(InputStream)</td>
 <td>I18N</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_DEFAULT_ENCODING">DM_DEFAULT_ENCODING</a></td>
@@ -273,13 +276,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.ReplayServerReplayPircBotX"></a>org.pircbotx.ReplayServer$ReplayPircBotX</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>org.pircbotx.ReplayServer$ReplayPircBotX doesn't override PircBotX.equals(Object)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_DOESNT_OVERRIDE_EQUALS">EQ_DOESNT_OVERRIDE_EQUALS</a></td>
@@ -288,13 +291,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.ServerInfo"></a>org.pircbotx.ServerInfo</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Confusing to have methods org.pircbotx.ServerInfo.getExtBanPrefix() and org.pircbotx.UserHostmask.getExtbanPrefix()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NM_CONFUSING">NM_CONFUSING</a></td>
@@ -303,13 +306,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.UtilSSLSocketFactory"></a>org.pircbotx.UtilSSLSocketFactory</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Unchecked/unconfirmed cast from java.net.Socket to javax.net.ssl.SSLSocket in org.pircbotx.UtilSSLSocketFactory.prepare(Socket)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_UNCONFIRMED_CAST">BC_UNCONFIRMED_CAST</a></td>
@@ -318,13 +321,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.dcc.DccHandler"></a>org.pircbotx.dcc.DccHandler</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Load of known null value in org.pircbotx.dcc.DccHandler.processDcc(UserHostmask, User, String)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NP_LOAD_OF_KNOWN_NULL_VALUE">NP_LOAD_OF_KNOWN_NULL_VALUE</a></td>
@@ -333,13 +336,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.dcc.FileTransfer"></a>org.pircbotx.dcc.FileTransfer</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Confusing to have methods org.pircbotx.dcc.FileTransfer.getFileSize() and org.pircbotx.hooks.events.IncomingFileTransferEvent.getFilesize()</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NM_CONFUSING">NM_CONFUSING</a></td>
@@ -348,13 +351,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.dcc.SendFileTransfer"></a>org.pircbotx.dcc.SendFileTransfer</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>org.pircbotx.dcc.SendFileTransfer.transferFile() ignores result of java.io.BufferedInputStream.read(byte[], int, int)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RR_NOT_CHECKED">RR_NOT_CHECKED</a></td>
@@ -363,28 +366,43 @@
 <div class="section">
 <h3><a name="org.pircbotx.exception.DccException"></a>org.pircbotx.exception.DccException</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>Class org.pircbotx.exception.DccException defines non-transient non-serializable instance field user</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#SE_BAD_FIELD">SE_BAD_FIELD</a></td>
 <td></td>
-<td>Low</td></tr></table></div><a name="org.pircbotx.output.OutputRaw"></a>
+<td>Low</td></tr></table></div><a name="org.pircbotx.hooks.events.ActionEvent"></a>
 <div class="section">
-<h3><a name="org.pircbotx.output.OutputRaw"></a>org.pircbotx.output.OutputRaw</h3>
+<h3><a name="org.pircbotx.hooks.events.ActionEvent"></a>org.pircbotx.hooks.events.ActionEvent</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
+<tr class="a">
+<td>There is an apparent infinite recursive loop in org.pircbotx.hooks.events.ActionEvent.respond(String)</td>
+<td>CORRECTNESS</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#IL_INFINITE_RECURSIVE_LOOP">IL_INFINITE_RECURSIVE_LOOP</a></td>
+<td>108</td>
+<td>High</td></tr></table></div><a name="org.pircbotx.output.OutputRaw"></a>
+<div class="section">
+<h3><a name="org.pircbotx.output.OutputRaw"></a>org.pircbotx.output.OutputRaw</h3>
+<table border="0" class="bodyTable">
 <tr class="b">
+<th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th></tr>
+<tr class="a">
 <td>Exceptional return value of java.util.concurrent.locks.Condition.await(long, TimeUnit) ignored in org.pircbotx.output.OutputRaw.rawLine(String)</td>
 <td>BAD_PRACTICE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_BAD_PRACTICE">RV_RETURN_VALUE_IGNORED_BAD_PRACTICE</a></td>
@@ -393,19 +411,19 @@
 <div class="section">
 <h3><a name="org.pircbotx.snapshot.ChannelSnapshot"></a>org.pircbotx.snapshot.ChannelSnapshot</h3>
 <table border="0" class="bodyTable">
-<tr class="a">
+<tr class="b">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="b">
+<tr class="a">
 <td>org.pircbotx.snapshot.ChannelSnapshot doesn't override org.pircbotx.Channel.equals(Object)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_DOESNT_OVERRIDE_EQUALS">EQ_DOESNT_OVERRIDE_EQUALS</a></td>
 <td>1</td>
 <td>Medium</td></tr>
-<tr class="a">
+<tr class="b">
 <td>Field ChannelSnapshot.mode masks field in superclass org.pircbotx.Channel</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#MF_CLASS_MASKS_FIELD">MF_CLASS_MASKS_FIELD</a></td>
@@ -414,13 +432,13 @@
 <div class="section">
 <h3><a name="org.pircbotx.snapshot.UserChannelDaoSnapshot"></a>org.pircbotx.snapshot.UserChannelDaoSnapshot</h3>
 <table border="0" class="bodyTable">
-<tr class="b">
+<tr class="a">
 <th>Bug</th>
 <th>Category</th>
 <th>Details</th>
 <th>Line</th>
 <th>Priority</th></tr>
-<tr class="a">
+<tr class="b">
 <td>Unchecked/unconfirmed cast from org.pircbotx.User to org.pircbotx.snapshot.UserSnapshot of return value in org.pircbotx.snapshot.UserChannelDaoSnapshot.getUserBot()</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_UNCONFIRMED_CAST_OF_RETURN_VALUE">BC_UNCONFIRMED_CAST_OF_RETURN_VALUE</a></td>
