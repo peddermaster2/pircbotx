@@ -17,18 +17,18 @@
  */
 package org.pircbotx.hooks.events;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import org.pircbotx.PircBotX;
+import org.pircbotx.hooks.Event;
+
+import com.google.common.collect.ImmutableMap;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
 import lombok.NonNull;
-import org.pircbotx.hooks.Event;
-import org.pircbotx.PircBotX;
 
 /**
- * This event is dispatched whenever we receive a line from the server that
- * PircBotX has not been programmed to recognize.
+ * This event is dispatched whenever we receive a line from the server that PircBotX has not been programmed to
+ * recognize.
  *
  * @author Leon Blakey
  */
@@ -39,16 +39,19 @@ public class UnknownEvent extends Event {
 	 * The raw line that was received from the server.
 	 */
 	protected final String line;
+	protected final ImmutableMap<String, String> tags;
 
-	public UnknownEvent(PircBotX bot, @NonNull String line) {
+	public UnknownEvent(PircBotX bot, @NonNull String line, @NonNull ImmutableMap<String, String> tags) {
 		super(bot);
 		this.line = line;
+		this.tags = tags;
 	}
 
 	/**
 	 * Responds by sending a <b>raw line</b> to the server.
 	 *
-	 * @param response The response to send
+	 * @param response
+	 *            The response to send
 	 */
 	@Override
 	public void respond(String response) {
