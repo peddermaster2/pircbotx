@@ -62,8 +62,7 @@
 		<connection>scm:git:https://github.com/TheLQ/pircbotx.git</connection>
 		<developerConnection>scm:git:https://github.com/TheLQ/pircbotx.git</developerConnection>
 		<url>https://github.com/TheLQ/pircbotx.git</url>
-	  <tag>HEAD</tag>
-  </scm>
+	</scm>
 	
 	<mailingLists>
 		<mailingList>
@@ -255,7 +254,7 @@
 					<properties>
 						<property>
 							<name>listener</name>
-							<value>org.pircbotx.TestLogger</value>
+							<value>org.pircbotx.TestngListener</value>
 						</property>
 					</properties>
 				</configuration>

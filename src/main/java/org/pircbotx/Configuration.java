@@ -96,6 +96,7 @@ public class Configuration {
 	protected final InetAddress localAddress;
 	protected final Charset encoding;
 	protected final Locale locale;
+	protected final int socketConnectTimeout;
 	protected final int socketTimeout;
 	protected final int maxLineLength;
 	protected final boolean autoSplitMessage;
@@ -155,6 +156,7 @@ public class Configuration {
 		checkNotNull(builder.getSocketFactory(), "Socket factory cannot be null");
 		checkNotNull(builder.getEncoding(), "Encoding cannot be null");
 		checkNotNull(builder.getLocale(), "Locale cannot be null");
+		checkArgument(builder.getSocketConnectTimeout() > 0, "Socket connect timeout must greater than 0");
 		checkArgument(builder.getSocketTimeout() > 0, "Socket timeout must greater than 0");
 		checkArgument(builder.getMaxLineLength() > 0, "Max line length must be positive");
 		checkArgument(builder.getMessageDelay() >= 0, "Message delay must be positive");
@@ -202,6 +204,7 @@ public class Configuration {
 		this.localAddress = builder.getLocalAddress();
 		this.encoding = builder.getEncoding();
 		this.locale = builder.getLocale();
+		this.socketConnectTimeout = builder.getSocketConnectTimeout();
 		this.socketTimeout = builder.getSocketTimeout();
 		this.maxLineLength = builder.getMaxLineLength();
 		this.autoSplitMessage = builder.isAutoSplitMessage();
@@ -379,6 +382,11 @@ public class Configuration {
 		 */
 		protected Locale locale = Locale.getDefault();
 		/**
+		 * Milliseconds to wait to connect to an IRC server address before
+		 * trying the next address, default {@link #getSocketTimeout() }
+		 */
+		protected int socketConnectTimeout = -1;
+		/**
 		 * Milliseconds to wait with no data from the IRC server before sending
 		 * a PING request to check if the socket is still alive, default 5
 		 * minutes (1000x60x5=300,000 milliseconds)
@@ -553,6 +561,7 @@ public class Configuration {
 			this.localAddress = configuration.getLocalAddress();
 			this.encoding = configuration.getEncoding();
 			this.locale = configuration.getLocale();
+			this.socketConnectTimeout = configuration.getSocketConnectTimeout();
 			this.socketTimeout = configuration.getSocketTimeout();
 			this.maxLineLength = configuration.getMaxLineLength();
 			this.autoSplitMessage = configuration.isAutoSplitMessage();
@@ -616,6 +625,7 @@ public class Configuration {
 			this.localAddress = otherBuilder.getLocalAddress();
 			this.encoding = otherBuilder.getEncoding();
 			this.locale = otherBuilder.getLocale();
+			this.socketConnectTimeout = otherBuilder.getSocketConnectTimeout();
 			this.socketTimeout = otherBuilder.getSocketTimeout();
 			this.maxLineLength = otherBuilder.getMaxLineLength();
 			this.autoSplitMessage = otherBuilder.isAutoSplitMessage();
@@ -641,6 +651,10 @@ public class Configuration {
 			this.channelModeHandlers.addAll(otherBuilder.getChannelModeHandlers());
 			this.shutdownHookEnabled = otherBuilder.isShutdownHookEnabled();
 			this.botFactory = otherBuilder.getBotFactory();
+		}
+
+		public int getSocketConnectTimeout() {
+			return (socketConnectTimeout != -1) ? socketConnectTimeout : socketTimeout;
 		}
 
 		/**
